@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @view.zip %>
+</p>
+
+<p>
+  <strong>Floor:</strong>
+  <%= @view.floor %>
+</p>
+
+<p>
+  <strong>Direction:</strong>
+  <%= @view.direction %>
+</p>
+
+<%= link_to 'Edit', edit_view_path(@view) %> |
+<%= link_to 'Back', views_path %>

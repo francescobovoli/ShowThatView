@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  zip: MyString
+  floor: 9.99
+  direction: 9.99
+
+two:
+  zip: MyString
+  floor: 9.99
+  direction: 9.99
