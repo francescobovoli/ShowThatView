@@ -38,3 +38,6 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# Adding bootstrap as per https://github.com/twbs/bootstrap-sass#a-ruby-on-rails
+gem 'bootstrap-sass', '~> 3.3.1'
+gem 'autoprefixer-rails'
