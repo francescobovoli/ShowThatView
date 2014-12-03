@@ -5,6 +5,30 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  <!-- Loads Google Earth -->
+  <script type="text/javascript" src="https://www.google.com/jsapi"> </script>
+  <script type="text/javascript">
+      var ge;
+      google.load("earth", "1", {"other_params":"sensor=false"});
+
+      function init() {
+          google.earth.createInstance('map3d', initCB, failureCB);
+      }
+
+      function initCB(instance) {
+          ge = instance;
+          ge.getWindow().setVisibility(true);
+          alert("Success!");
+      }
+
+      function failureCB(errorCode) {
+          alert("Failed to initialize Google Earth! :(");
+      }
+
+      google.setOnLoadCallback(init);
+  </script>
+
 </head>
 <body>
 
