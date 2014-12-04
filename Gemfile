@@ -41,3 +41,6 @@ gem 'spring',        group: :development
 # Adding bootstrap as per https://github.com/twbs/bootstrap-sass#a-ruby-on-rails
 gem 'bootstrap-sass', '~> 3.3.1'
 gem 'autoprefixer-rails'
+
+# Adding rails_12factor to support Rails 4 on Heroku as per https://devcenter.heroku.com/articles/getting-started-with-rails4#heroku-gems
+gem 'rails_12factor', group: :production
