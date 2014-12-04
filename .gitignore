@@ -14,3 +14,8 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore Idea specific files as per http://stackoverflow.com/questions/11968531/what-to-gitignore-from-the-idea-folder
+workspace.xml
+**/.idea/workspace.xml
+**/.idea/tasks.xml
