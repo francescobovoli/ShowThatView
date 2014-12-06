@@ -14,6 +14,7 @@
 
       function init() {
           google.earth.createInstance('map3d', initCB, failureCB);
+          geocoder = new google.maps.Geocoder();
       }
 
       function initCB(instance) {
