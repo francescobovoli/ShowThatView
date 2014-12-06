@@ -16,7 +16,7 @@ function updateView(){
     var viewFloor = document.getElementById('view_floor').value;
     var viewZIP = document.getElementById('view_zip').value;
     var viewDirection = document.getElementById('view_direction').value;
-    alert("Read user inputs." + "\nFloor: " + viewFloor + "\nZIP: " + viewZIP + "\nDirection: " + viewDirection)
+    // alert("Read user inputs." + "\nFloor: " + viewFloor + "\nZIP: " + viewZIP + "\nDirection: " + viewDirection)
 
     // Calculates new view values based on user input
     var viewAltitude = viewFloor * FLOOR_HEIGHT;
@@ -36,6 +36,7 @@ function updateView(){
 
     // Set new camera settings
     camera.setAltitude(viewAltitude);
+    camera.setTilt(90);
 
     // Update the view in Google Earth.
     // ge.getView().setAbstractView(lookAt);
