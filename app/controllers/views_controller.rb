@@ -28,7 +28,8 @@ class ViewsController < ApplicationController
 
     respond_to do |format|
       if @view.save
-        format.html { redirect_to :back, notice: 'View was successfully created.' }
+        format.html { render :new, notice: 'View was successfully created.' }
+        # format.html { redirect_to :back, notice: 'View was successfully created.' }
         format.json { render :show, status: :created, location: @view }
       else
         format.html { render :new }
