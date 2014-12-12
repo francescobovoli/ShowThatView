@@ -15,4 +15,3 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-//= require google_maps_api_v3

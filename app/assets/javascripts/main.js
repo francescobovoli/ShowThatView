@@ -9,7 +9,6 @@ function updateView(){
     var geocodedLongitude = 0;
 
     // Get the current view.
-    // var lookAt = ge.getView().copyAsLookAt(ge.ALTITUDE_RELATIVE_TO_GROUND);
     var camera = ge.getView().copyAsCamera(ge.ALTITUDE_RELATIVE_TO_GROUND);
 
     // Read user inputs
@@ -39,7 +38,6 @@ function updateView(){
     camera.setTilt(90);
 
     // Update the view in Google Earth.
-    // ge.getView().setAbstractView(lookAt);
     ge.getView().setAbstractView(camera);
 
 }

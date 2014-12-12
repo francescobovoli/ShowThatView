@@ -6,6 +6,9 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
+  <!-- Loads Google Maps -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0QCyDwNBnBMrGLOo0dbXfy5Gv-WlmN40" type="text/javascript"></script>
+
   <!-- Loads Google Earth -->
   <script type="text/javascript" src="https://www.google.com/jsapi"> </script>
   <script type="text/javascript">
@@ -23,8 +26,8 @@
           ge.getNavigationControl().setVisibility(ge.VISIBILITY_AUTO);
           ge.getLayerRoot().enableLayerById(ge.LAYER_BUILDINGS, true);
           ge.getLayerRoot().enableLayerById(ge.LAYER_TREES, true);
-          // ge.getLayerRoot().enableLayerById(ge.LAYER_ROADS, true);
           ge.getLayerRoot().enableLayerById(ge.LAYER_TERRAIN, true);
+          // ge.getLayerRoot().enableLayerById(ge.LAYER_ROADS, true);
       }
 
       function failureCB(errorCode) {
