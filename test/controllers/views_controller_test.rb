@@ -18,7 +18,7 @@ class ViewsControllerTest < ActionController::TestCase
 
   test "should create view" do
     assert_difference('View.count') do
-      post :create, view: { direction: @view.direction, floor: @view.floor, zip: @view.zip }
+      post :create, view: { direction: @view.direction, floor: @view.floor, address: @view.zip }
     end
 
     assert_redirected_to view_path(assigns(:view))
@@ -35,7 +35,7 @@ class ViewsControllerTest < ActionController::TestCase
   end
 
   test "should update view" do
-    patch :update, id: @view, view: { direction: @view.direction, floor: @view.floor, zip: @view.zip }
+    patch :update, id: @view, view: { direction: @view.direction, floor: @view.floor, address: @view.zip }
     assert_redirected_to view_path(assigns(:view))
   end
 

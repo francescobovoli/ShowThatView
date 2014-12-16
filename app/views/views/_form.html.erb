@@ -12,17 +12,19 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :zip %><br>
-    <%= f.text_field :zip, :value => "Eiffel tower, Paris" %>
+    <%= f.label :address %><br>
+    <%= f.text_field :address, :value => "Eiffel tower, Paris" %>
   </div>
   <div class="field">
     <%= f.label :floor %><br>
     <%= f.text_field :floor, :value => "100" %>
   </div>
+    <!--
   <div class="field">
     <%= f.label :direction %><br>
     <%= f.text_field :direction, :value => "0" %>
   </div>
+  -->
   <div class="actions">
     <%= submit_tag 'Show!' , :onclick => "updateView()"%>
   </div>

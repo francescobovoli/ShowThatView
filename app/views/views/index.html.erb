@@ -3,7 +3,7 @@
 <table>
   <thead>
     <tr>
-      <th>Zip</th>
+      <th>Address</th>
       <th>Floor</th>
       <th>Direction</th>
       <th colspan="3"></th>
@@ -13,7 +13,7 @@
   <tbody>
     <% @views.each do |view| %>
       <tr>
-        <td><%= view.zip %></td>
+        <td><%= view.address %></td>
         <td><%= view.floor %></td>
         <td><%= view.direction %></td>
         <td><%= link_to 'Show', view %></td>

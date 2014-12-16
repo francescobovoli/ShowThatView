@@ -11,17 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141124143655) do
+ActiveRecord::Schema.define(version: 20141216094648) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "views", force: true do |t|
-    t.string   "zip"
     t.decimal  "floor"
     t.decimal  "direction"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "address"
   end
 
 end
