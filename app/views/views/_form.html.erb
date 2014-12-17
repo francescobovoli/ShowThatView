@@ -11,21 +11,30 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :address %><br>
-    <%= f.text_field :address, :value => "Eiffel tower, Paris" %>
+  <div class="field form-group">
+    <%= f.label :address, class: 'col-sm-2 control-label' %><br>
+    <%= f.text_field :address, :value => "Eiffel tower, Paris", class: 'form-control' %>
   </div>
-  <div class="field">
-    <%= f.label :floor %><br>
-    <%= f.text_field :floor, :value => "100" %>
+  <div class="field form-group">
+    <%= f.label :floor, class: 'col-sm-2 control-label' %><br>
+    <%= f.text_field :floor, :value => "100", class: 'form-control' %>
   </div>
     <!--
-  <div class="field">
-    <%= f.label :direction %><br>
-    <%= f.text_field :direction, :value => "0" %>
+  <div class="field form-group">
+    <%= f.label :direction, class: 'col-sm-2 control-label' %><br>
+    <%= f.text_field :direction, :value => "0", class: 'form-control' %>
   </div>
   -->
-  <div class="actions">
-    <%= submit_tag 'Show!' , :onclick => "updateView()"%>
+  <div class="actions form-group">
+    <div class="col-sm-2">
+      <%= submit_tag 'Show!' , :onclick => "updateView()"%>
+    </div>
   </div>
+
+  <div class="field form-group">
+    <br>
+    <br>
+    <%= link_to 'OR: show me some examples..', views_path %>
+  </div>
+
 <% end %>
